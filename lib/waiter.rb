@@ -17,4 +17,16 @@ class Waiter
   def new_meal(customer, total, tip)
     Meal.new(customer, self, total, tip)
   end 
+  
+  def meals 
+    meals = []
+    Meal.all.each do |meal| 
+      if meal.waiter == self
+        meals << meal 
+      end 
+    end 
+    meals 
+  end 
+  
+  
 end
