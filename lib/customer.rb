@@ -24,6 +24,7 @@ class Customer
       if meal.customer == self
         meal 
       end 
+    end 
   end 
   
   #def meals 
