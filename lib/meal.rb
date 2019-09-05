@@ -1,3 +1,4 @@
+require 'pry'
 class Meal
   
   @@all = []
@@ -16,5 +17,8 @@ class Meal
     @@all 
   end 
   
+  def meals 
+    binding.pry
+  end 
 
 end
