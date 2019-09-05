@@ -17,8 +17,6 @@ class Meal
     @@all 
   end 
   
-  def meals 
-    binding.pry
-  end 
+ 
 
 end
