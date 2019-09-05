@@ -20,13 +20,10 @@ class Customer
   end 
   
   def meals 
-    meals = []
     Meal.all.collect do |meal| 
       if meal.customer == self
-        meals << meal 
+        meal 
       end 
-    end 
-    meals 
   end 
   
   #def meals 
