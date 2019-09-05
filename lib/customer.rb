@@ -20,8 +20,13 @@ class Customer
   end 
   
   def meals 
-    
-    binding.pry
+    meals = []
+    Meal.all.collect do |meal| 
+      if meal.customer = self
+        meals << meal 
+      end 
+    end 
+    meals 
   end 
   
 end
