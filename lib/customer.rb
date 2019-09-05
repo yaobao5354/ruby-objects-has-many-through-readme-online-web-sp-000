@@ -22,7 +22,7 @@ class Customer
   def meals 
     meals = []
     Meal.all.each do |meal| 
-      if meal.customer = self
+      if meal.customer == self
         meals << meal 
       end 
     end 
