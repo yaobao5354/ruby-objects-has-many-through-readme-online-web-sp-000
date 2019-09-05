@@ -19,12 +19,12 @@ class Customer
     Meal.new(self, waiter, total, tip)
   end 
   
-  def meals 
+  def meals
+     binding.pry
     Meal.all.collect do |meal| 
       if meal.customer == self
         meal 
       end 
-      binding.pry
     end 
   end 
   
