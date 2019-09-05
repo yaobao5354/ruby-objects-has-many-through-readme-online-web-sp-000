@@ -21,12 +21,22 @@ class Customer
   
   def meals 
     meals = []
-    Meal.all.each do |meal| 
+    Meal.all.collect do |meal| 
       if meal.customer == self
         meals << meal 
       end 
     end 
     meals 
   end 
+  
+  #def meals 
+   # meals = []
+    #Meal.all.each do |meal| 
+     # if meal.customer == self
+      #  meals << meal 
+  #    end 
+   # end 
+    #meals 
+  #end 
   
 end
