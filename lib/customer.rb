@@ -31,9 +31,9 @@ class Customer
   
   def waiters 
     waiters = []
-    Waiter.all.each do |meal| 
+    Waiter.all.each do |waiter| 
       if waiter.customer == self
-        waiters << meal 
+        waiters << waiter 
       end 
     end 
     waiters
