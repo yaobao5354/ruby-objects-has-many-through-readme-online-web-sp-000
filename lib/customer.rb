@@ -13,7 +13,8 @@ class Customer
   end 
   
   def new_meal(customer, waiter, total, tip)
-    Meal.
+    binding.pry
+    Meal.new()
   
   end 
 end
